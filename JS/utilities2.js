@@ -12,3 +12,7 @@ function getTextFieldValueById(id){
 
     return textNumber;
 }
+
+function showSectionById(id){
+    
+}

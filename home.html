@@ -27,13 +27,14 @@
                     <div class="divider"></div>
                     <!-- features start-->
                     <div>
-                        <button class="btn btn-lg">Add Money</button>
+                        <button id="show_add_money_form" class="btn btn-lg">Add Money</button>
                         <button class="btn btn-lg">Cash Out</button>
+                        <button class="btn btn-lg">Transactions</button>
                     </div>
                     <!-- features end -->
                     <div class="divider"></div>
                     <!-- add money form start -->
-                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="add_money_form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -57,7 +58,7 @@
                     <!-- add money form End -->
 
                     <!-- cash out form start -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="cash_out_form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -80,6 +81,12 @@
                     </div>
                     <!-- cash out form End -->
 
+                    <!-- transaction start -->
+                     <div id="transaction_section">
+                        <h2 class="text-5xl text-center">Transaction History</h2>
+                     </div>
+                    <!-- transaction End -->
+
                 </div>
             </div>
         </div>
@@ -87,6 +94,7 @@
     <script src="JS/utilities2.js"></script>
     <script src="JS/addMoney2.js"></script>
     <script src="JS/cashOut.js"></script>
+    <script src="JS/Features.js"></script>
 </body>
 
 </html>
