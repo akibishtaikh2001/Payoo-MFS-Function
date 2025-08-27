@@ -11,7 +11,14 @@ document.getElementById('btn_add_money').addEventListener('click', function(even
         const newBalance = balance + addMoney;
 
         document.getElementById('account_balance').innerText = newBalance;
-    
+
+        // add to transaction history
+        const p = document.createElement('p');
+        p.innerText = `Added: ${addMoney} Tk. New Balance: ${newBalance}`;
+        console.log(p);
+
+        // should be a common function
+        document.getElementById('transaction_container').appendChild(p);
     }
     else{
         alert('Failed to add the money.')
